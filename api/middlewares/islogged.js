@@ -4,9 +4,9 @@ const isLogin = (req, res, next) => {
   };
   
   const isAdmin = (req, res, next) => {
-    if (req.user) {//SE FIJA SI ESTA LOGEADO
+    if (req.user) {
       
-      req.user.isAdmin ? next() : res.status(401).send("El user no es admin");//COMPRUEBA SI ES ADMIN
+      req.user.isAdmin ? next() : res.status(401).send("No es admin");
     } else {
       res.status(401).send("Logueate");
     }

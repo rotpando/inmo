@@ -1,7 +1,6 @@
 const express = require("express")
 
 const auth = require("./auth")
-const courses = require("./courses")
 const users = require("./users")
 const admin = require("./admin")
 const cart = require("./cart")
